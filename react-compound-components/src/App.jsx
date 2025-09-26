@@ -8,7 +8,7 @@ function App() {
         <section>
           <h2>Why work with us?</h2>
           <Accordion clssNme="accordion">
-            <AccordionItem className="accordion-item" title="we got 20 years of experience">
+            <AccordionItem id="experience" className="accordion-item" title="we got 20 years of experience">
               <article>
                 <p>you cn&apost;t go wrong with us.</p>
                 <p>
@@ -16,7 +16,7 @@ function App() {
                 </p>
               </article>
             </AccordionItem>
-            <AccordionItem className="accordion-item" title="we re working with local guides">
+            <AccordionItem id="local-guides" className="accordion-item" title="we re working with local guides">
               <article>
                 <p>we are not doing this along from our office</p>
                 <p>
