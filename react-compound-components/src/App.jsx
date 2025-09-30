@@ -1,5 +1,6 @@
 import Accordion from "./components/Accordion/Accordion";
 import SearchableList from "./components/Searchable.List/SearchableList";
+import Place from "./Place";
 
 import savannaImg from './assets/african-savanna.jpg';
 import amazonImg from './assets/amazon-river.jpg';
@@ -76,7 +77,12 @@ function App() {
           </Accordion>
         </section>
         <section>
-          <SearchableList items={PLACES} />
+          <SearchableList items={PLACES} itemKeyFn={(item) => item.id}>
+            {(item) => <Place item={item} />}
+          </SearchableList>
+          <SearchableList items={['item 1', 'item 2']} itemKeyFn={(item) => item}>
+            {(item) => item}
+          </SearchableList>
         </section>
       </main>
     </>
